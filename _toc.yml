@@ -2,8 +2,23 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
-chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+root: intro # Esta es tu portada (intro.md)
+
+parts:
+  - caption: Primeros Pasos
+    chapters:
+      - file: introduccion_piezas
+      - file: inventario_kits
+
+  - caption: Guías de Ensamblaje
+    chapters:
+      - file: ensamblaje_basico
+      - file: modelos_avanzados
+        sections:
+          - file: vehiculo_explorador
+          - file: brazo_robotico
+
+  - caption: Programación y Control
+    chapters:
+      - file: conceptos_programacion
+      - file: control_motores_sensores

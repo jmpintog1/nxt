@@ -11,7 +11,7 @@ parts:
       - file: instalacion_software_w10
       - file: instalacion_software_w11
   #     - file: introduccion_piezas
-  #     - file: inventario_kits
+      - file: inventario_kits
 
   # - caption: Guías de Ensamblaje
   #   chapters:

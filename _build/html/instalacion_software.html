@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Instalación de Software en Windows 7 &#8212; El Libro de LEGO</title>
+    <title>Instalación de Software en Windows &#8212; El Libro de LEGO</title>
   
   
   
@@ -170,14 +170,8 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Primeros Pasos</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Instalación de Software en Windows 7</a></li>
-
-
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Instalación de Software en Windows</a></li>
 <li class="toctree-l1"><a class="reference internal" href="inventario_kits.html">Inventario del Kit NXT: ¿Qué hay en la caja?</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Guías de Ensamblaje</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="ensamblaje_basico.html">La Base Motriz</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Programación y Control</span></p>
 <ul class="nav bd-sidenav">
@@ -367,7 +361,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Instalación de Software en Windows 7</h1>
+    <h1>Instalación de Software en Windows</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -377,25 +371,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Instalación de Software en Windows 7</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacion-del-fantom-driver">1. Instalación del Fantom Driver</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacion-de-bricx-command-center-bricxcc">2. Instalación de Bricx Command Center (BricxCC)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#primera-prueba-de-funcionamiento-mover-un-motor">3. Primera prueba de funcionamiento: Mover un motor</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacion-de-software-en-windows-10">Instalación de Software en Windows 10</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1. Instalación del Fantom Driver</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parte-a-deshabilitar-el-uso-obligatorio-de-controladores-firmados">Parte A: Deshabilitar el uso obligatorio de controladores firmados</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parte-b-instalacion-desde-la-consola">Parte B: Instalación desde la consola</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2. Instalación de Bricx Command Center (BricxCC)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">3. Primera prueba de funcionamiento: Mover un motor</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacion-de-software-en-windows-11">Instalación de Software en Windows 11</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacion-en-windows-10-y-windows-11">Instalación en Windows 10 y Windows 11</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Parte A: Deshabilitar el uso obligatorio de controladores firmados</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parte-a-deshabilitar-el-uso-obligatorio-de-controladores-firmados">Parte A: Deshabilitar el uso obligatorio de controladores firmados</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parte-b-instalacion-desde-la-consola-para-evitar-el-bloqueo-smartscreen">Parte B: Instalación desde la consola (Para evitar el bloqueo SmartScreen)</a></li>
 </ul>
 </li>
@@ -403,9 +380,6 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacion-de-bricx-command-center-todos-los-windows">Instalación de Bricx Command Center (Todos los Windows)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#primera-prueba-mover-un-motor">Primera prueba: Mover un motor</a></li>
 </ul>
-</li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -416,141 +390,17 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="instalacion-de-software-en-windows-7">
-<h1>Instalación de Software en Windows 7<a class="headerlink" href="#instalacion-de-software-en-windows-7" title="Permalink to this heading">#</a></h1>
-<p>Si utilizas un equipo con Windows 7, la instalación del entorno para programar tu bloque LEGO Mindstorms NXT es mucho más directa que en versiones posteriores del sistema operativo. Necesitaremos instalar el controlador de comunicación (Fantom Driver) y el entorno de desarrollo (Bricx Command Center).</p>
-<section id="instalacion-del-fantom-driver">
-<h2>1. Instalación del Fantom Driver<a class="headerlink" href="#instalacion-del-fantom-driver" title="Permalink to this heading">#</a></h2>
-<p>El Fantom Driver es el controlador oficial que permite que Windows reconozca el bloque NXT al conectarlo mediante el cable USB.</p>
-<ol class="arabic simple">
-<li><p>Descarga el archivo de instalación del Fantom Driver y extráelo en una carpeta de tu preferencia. <a class="reference download internal" download="" href="_downloads/0495d57aca57ad05756cc4ce2fe8df67/NXT-Fantom-Drivers-v120.zip"><span class="xref download myst">📥 Descargar Fantom Driver para Windows</span></a></p></li>
-<li><p>Navega hasta esa carpeta y busca el archivo ejecutable de instalación (generalmente llamado <code class="docutils literal notranslate"><span class="pre">setup.exe</span></code> o similar).</p></li>
-<li><p>Haz doble clic sobre el archivo para ejecutarlo.</p></li>
-<li><p>Sigue las instrucciones del asistente de instalación en pantalla. A diferencia de Windows 10, Windows 7 suele permitir la instalación de este controlador sin mayores inconvenientes. Si aparece alguna advertencia de seguridad estándar de Windows preguntando si deseas ejecutar el archivo o instalar el software, haz clic en “Ejecutar” o “Instalar de todas formas”.</p></li>
-</ol>
-</section>
-<section id="instalacion-de-bricx-command-center-bricxcc">
-<h2>2. Instalación de Bricx Command Center (BricxCC)<a class="headerlink" href="#instalacion-de-bricx-command-center-bricxcc" title="Permalink to this heading">#</a></h2>
-<p>Una vez que el controlador está instalado, procedemos con el entorno de programación.</p>
-<ol class="arabic simple">
-<li><p>Descarga el instalador de BricxCC. <a class="reference download internal" download="" href="_downloads/93bda50940fca706355a9896e2f75ccc/bricxcc_setup_3389.exe"><span class="xref download myst">📥 Descargar Bricx Command Center</span></a></p></li>
-<li><p>Ejecútalo e instálalo dejando las opciones que vienen marcadas por defecto.</p></li>
-<li><p>Al finalizar la instalación, <strong>enciende tu bloque LEGO NXT</strong> y conéctalo al computador utilizando el cable USB.</p></li>
-<li><p>Abre el programa BricxCC. Al iniciar, te mostrará una pequeña ventana llamada “Find Brick” para configurar la conexión inicial:</p>
-<ul class="simple">
-<li><p>En <strong>Port</strong>, selecciona <strong>USB</strong>.</p></li>
-<li><p>En <strong>Brick Type</strong>, selecciona <strong>NXT</strong>.</p></li>
-<li><p>En <strong>Firmware</strong>, selecciona <strong>Standard</strong>.</p></li>
-</ul>
-</li>
-<li><p>Haz clic en <strong>OK</strong>. Si la ventana principal de BricxCC se abre sin mostrar ningún error de conexión, significa que el software se está comunicando correctamente con tu bloque NXT.</p></li>
-</ol>
-</section>
-<section id="primera-prueba-de-funcionamiento-mover-un-motor">
-<h2>3. Primera prueba de funcionamiento: Mover un motor<a class="headerlink" href="#primera-prueba-de-funcionamiento-mover-un-motor" title="Permalink to this heading">#</a></h2>
-<p>Para confirmar que todo está listo para empezar a trabajar, probaremos un programa básico. Conecta un motor al <strong>Puerto B</strong> del bloque NXT.</p>
-<ol class="arabic simple">
-<li><p>En BricxCC, ve al menú superior y selecciona <em>File &gt; New</em> para abrir un nuevo documento en blanco.</p></li>
-<li><p>Copia y pega el siguiente código en NXC:</p></li>
-</ol>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">task</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">OnFwd</span><span class="p">(</span><span class="n">OUT_B</span><span class="p">,</span><span class="w"> </span><span class="mi">75</span><span class="p">);</span><span class="w"> </span><span class="c1">// Enciende el motor del puerto B al 75% de potencia</span>
-<span class="w">    </span><span class="n">Wait</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span><span class="w">       </span><span class="c1">// Mantiene la acción durante 2 segundos (2000 ms)</span>
-<span class="w">    </span><span class="n">Off</span><span class="p">(</span><span class="n">OUT_B</span><span class="p">);</span><span class="w">       </span><span class="c1">// Apaga el motor</span>
-<span class="p">}</span><span class="w"></span>
-</pre></div>
-</div>
-<ol class="arabic simple" start="3">
-<li><p>Guarda tu archivo (puedes llamarlo <code class="docutils literal notranslate"><span class="pre">prueba_motor</span></code>).</p></li>
-<li><p>Presiona el botón <strong>Download and Run</strong> en la barra de herramientas (o utiliza el atajo de teclado <code class="docutils literal notranslate"><span class="pre">Ctrl+F5</span></code>).</p></li>
-<li><p>El código se enviará a tu bloque NXT y verás cómo el motor conectado al puerto B gira durante dos segundos. ¡La instalación ha sido un éxito!</p></li>
-</ol>
-</section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="instalacion-de-software-en-windows-10">
-<h1>Instalación de Software en Windows 10<a class="headerlink" href="#instalacion-de-software-en-windows-10" title="Permalink to this heading">#</a></h1>
-<p>Para programar y comunicarnos con nuestro bloque LEGO Mindstorms NXT desde un equipo moderno con Windows 10, necesitamos instalar dos componentes fundamentales: el controlador de comunicación (Fantom Driver) <a class="reference download internal" download="" href="_downloads/0495d57aca57ad05756cc4ce2fe8df67/NXT-Fantom-Drivers-v120.zip"><span class="xref download myst">📥 Descargar Fantom Driver para Windows</span></a> y el entorno de desarrollo (Bricx Command Center).</p>
-<section id="id1">
-<h2>1. Instalación del Fantom Driver<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
-<p>El Fantom Driver es el controlador oficial que permite que el sistema operativo reconozca el bloque NXT al conectarlo mediante el cable USB. Como es un software antiguo, Windows 10 bloqueará su instalación por no tener una firma digital reciente.</p>
-<p>Para instalarlo exitosamente, debemos dividir el proceso en dos partes: primero, deshabilitar la firma de controladores y, segundo, instalarlo como administrador.</p>
-<section id="parte-a-deshabilitar-el-uso-obligatorio-de-controladores-firmados">
-<h3>Parte A: Deshabilitar el uso obligatorio de controladores firmados<a class="headerlink" href="#parte-a-deshabilitar-el-uso-obligatorio-de-controladores-firmados" title="Permalink to this heading">#</a></h3>
-<ol class="arabic simple">
-<li><p>Haz clic en el menú <strong>Inicio</strong> de Windows y selecciona el ícono del engranaje para abrir <strong>Configuración</strong>.</p></li>
-<li><p>Ve a <strong>Actualización y seguridad</strong> y luego selecciona <strong>Recuperación</strong> en el menú lateral izquierdo.</p></li>
-<li><p>En la sección <em>Inicio avanzado</em>, haz clic en el botón <strong>Reiniciar ahora</strong>. Tu computador se reiniciará en una pantalla azul con varias opciones.</p></li>
-<li><p>Selecciona <strong>Solucionar problemas</strong> &gt; <strong>Opciones avanzadas</strong> &gt; <strong>Configuración de inicio</strong>.</p></li>
-<li><p>Haz clic en el botón <strong>Reiniciar</strong>.</p></li>
-<li><p>Al volver a encender, verás una lista de opciones. Presiona la tecla <strong>7</strong> o <strong>F7</strong> en tu teclado para seleccionar <strong>Deshabilitar el uso obligatorio de controladores firmados</strong>. Windows iniciará normalmente.</p></li>
-</ol>
-</section>
-<section id="parte-b-instalacion-desde-la-consola">
-<h3>Parte B: Instalación desde la consola<a class="headerlink" href="#parte-b-instalacion-desde-la-consola" title="Permalink to this heading">#</a></h3>
-<p>Incluso con el paso anterior, Windows puede mostrar una pantalla azul indicando “Windows protegió su PC” al intentar abrir el instalador. Para evitarlo:</p>
-<ol class="arabic">
-<li><p>Ve al menú Inicio de Windows, escribe <code class="docutils literal notranslate"><span class="pre">cmd</span></code>.</p></li>
-<li><p>Haz clic derecho sobre la aplicación <strong>Símbolo del sistema</strong> y selecciona <strong>Ejecutar como administrador</strong>.</p></li>
-<li><p>En la consola, utiliza el comando <code class="docutils literal notranslate"><span class="pre">cd</span></code> para navegar hasta la carpeta donde extrajiste los archivos del instalador del Fantom Driver. Por ejemplo:</p>
-<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>cd C:\Ruta\A\Tu\Carpeta\Descargas\FantomDriver
-</pre></div>
-</div>
-</li>
-<li><p>Escribe el nombre del archivo ejecutable (por ejemplo, <code class="docutils literal notranslate"><span class="pre">setup.exe</span></code> o el instalador <code class="docutils literal notranslate"><span class="pre">.msi</span></code> correspondiente) y presiona <strong>Enter</strong>.</p></li>
-<li><p>Ahora el asistente de instalación se abrirá sin bloqueos. Sigue las instrucciones en pantalla para finalizar el proceso. En un momento te pedirá confirmación para instalar un controlador no firmado; acéptalo.</p></li>
-</ol>
-</section>
-</section>
-<section id="id2">
-<h2>2. Instalación de Bricx Command Center (BricxCC)<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
-<p>BricxCC es el entorno de programación donde escribiremos el código (usaremos el lenguaje NXC - <em>Not eXactly C</em>) para darle instrucciones a nuestro robot.</p>
-<ol class="arabic simple">
-<li><p>Descarga el instalador de BricxCC.</p></li>
-<li><p>Ejecútalo e instálalo con las opciones por defecto.</p></li>
-<li><p>Una vez instalado, <strong>enciende tu bloque LEGO NXT</strong> y conéctalo al computador mediante USB.</p></li>
-<li><p>Abre BricxCC. Se abrirá una pequeña ventana emergente llamada “Find Brick” para establecer la conexión:</p>
-<ul class="simple">
-<li><p>En <strong>Port</strong>, selecciona <strong>USB</strong>.</p></li>
-<li><p>En <strong>Brick Type</strong>, selecciona <strong>NXT</strong>.</p></li>
-<li><p>En <strong>Firmware</strong>, selecciona <strong>Standard</strong>.</p></li>
-</ul>
-</li>
-<li><p>Haz clic en <strong>OK</strong>. BricxCC debería abrirse correctamente, confirmando que la comunicación entre el PC y el bloque es exitosa.</p></li>
-</ol>
-</section>
-<section id="id3">
-<h2>3. Primera prueba de funcionamiento: Mover un motor<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
-<p>Para confirmar que toda la instalación fue exitosa, haremos que el bloque ejecute un código muy simple. Conecta un motor al <strong>Puerto B</strong> del bloque NXT.</p>
-<ol class="arabic simple">
-<li><p>En BricxCC, ve a <em>File &gt; New</em> para abrir un archivo en blanco.</p></li>
-<li><p>Escribe el siguiente código:</p></li>
-</ol>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">task</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">OnFwd</span><span class="p">(</span><span class="n">OUT_B</span><span class="p">,</span><span class="w"> </span><span class="mi">75</span><span class="p">);</span><span class="w"> </span><span class="c1">// Enciende el motor del puerto B al 75% de potencia</span>
-<span class="w">    </span><span class="n">Wait</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span><span class="w">       </span><span class="c1">// Mantiene la acción durante 2 segundos (2000 ms)</span>
-<span class="w">    </span><span class="n">Off</span><span class="p">(</span><span class="n">OUT_B</span><span class="p">);</span><span class="w">       </span><span class="c1">// Apaga el motor</span>
-<span class="p">}</span><span class="w"></span>
-</pre></div>
-</div>
-<ol class="arabic simple" start="3">
-<li><p>Guarda el archivo.</p></li>
-<li><p>Presiona el botón <strong>Download and Run</strong> en la barra de herramientas (o presiona <code class="docutils literal notranslate"><span class="pre">Ctrl+F5</span></code>).</p></li>
-<li><p>El código se compilará, se transferirá al bloque y el motor B girará durante dos segundos. ¡Tu entorno está listo para programar!</p></li>
-</ol>
-</section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="instalacion-de-software-en-windows-11">
-<h1>Instalación de Software en Windows 11<a class="headerlink" href="#instalacion-de-software-en-windows-11" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="instalacion-de-software-en-windows">
+<h1>Instalación de Software en Windows<a class="headerlink" href="#instalacion-de-software-en-windows" title="Permalink to this heading">#</a></h1>
 <p>Para programar y comunicarnos con nuestro bloque LEGO Mindstorms NXT, necesitamos instalar el controlador de comunicación (<strong>Fantom Driver</strong>) y el entorno de desarrollo (<strong>Bricx Command Center</strong> o BricxCC).</p>
+<p>Descarga el archivo de instalación del Fantom Driver y extráelo en una carpeta de tu preferencia. <a class="reference download internal" download="" href="_downloads/0495d57aca57ad05756cc4ce2fe8df67/NXT-Fantom-Drivers-v120.zip"><span class="xref download myst">📥 Descargar Fantom Driver para Windows</span></a></p>
 <p>El proceso varía dependiendo de tu sistema operativo, ya que el Fantom Driver es un controlador antiguo y las versiones más recientes de Windows bloquean su instalación por defecto. Busca tu versión a continuación:</p>
 <hr class="docutils" />
 <section id="instalacion-en-windows-10-y-windows-11">
 <h2>Instalación en Windows 10 y Windows 11<a class="headerlink" href="#instalacion-en-windows-10-y-windows-11" title="Permalink to this heading">#</a></h2>
 <p>Ambos sistemas operativos tienen políticas de seguridad estrictas que bloquean los controladores no firmados digitalmente. Para instalar el Fantom Driver, debemos dividir el proceso en dos partes: deshabilitar la firma de controladores y luego instalar desde la consola.</p>
-<section id="id4">
-<h3>Parte A: Deshabilitar el uso obligatorio de controladores firmados<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
+<section id="parte-a-deshabilitar-el-uso-obligatorio-de-controladores-firmados">
+<h3>Parte A: Deshabilitar el uso obligatorio de controladores firmados<a class="headerlink" href="#parte-a-deshabilitar-el-uso-obligatorio-de-controladores-firmados" title="Permalink to this heading">#</a></h3>
 <p><strong>En Windows 10:</strong></p>
 <ol class="arabic simple">
 <li><p>Ve a <strong>Configuración</strong> &gt; <strong>Actualización y seguridad</strong> &gt; <strong>Recuperación</strong>.</p></li>
@@ -596,7 +446,7 @@ document.write(`
 <h2>Instalación de Bricx Command Center (Todos los Windows)<a class="headerlink" href="#instalacion-de-bricx-command-center-todos-los-windows" title="Permalink to this heading">#</a></h2>
 <p>Una vez instalado el Fantom Driver, el proceso para el entorno de programación es el mismo para cualquier versión de Windows:</p>
 <ol class="arabic simple">
-<li><p>Descarga el instalador de <strong>BricxCC</strong>.</p></li>
+<li><p>Descarga el instalador de <strong>BricxCC</strong>. <a class="reference download internal" download="" href="_downloads/93bda50940fca706355a9896e2f75ccc/bricxcc_setup_3389.exe"><span class="xref download myst">📥 Descargar Bricx Command Center</span></a></p></li>
 <li><p>Ejecútalo e instálalo con las opciones por defecto.</p></li>
 <li><p><strong>Enciende tu bloque LEGO NXT</strong> y conéctalo al PC mediante el cable USB.</p></li>
 <li><p>Abre BricxCC. En la ventana “Find Brick”:</p>
@@ -695,25 +545,8 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Instalación de Software en Windows 7</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacion-del-fantom-driver">1. Instalación del Fantom Driver</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacion-de-bricx-command-center-bricxcc">2. Instalación de Bricx Command Center (BricxCC)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#primera-prueba-de-funcionamiento-mover-un-motor">3. Primera prueba de funcionamiento: Mover un motor</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacion-de-software-en-windows-10">Instalación de Software en Windows 10</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1. Instalación del Fantom Driver</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parte-a-deshabilitar-el-uso-obligatorio-de-controladores-firmados">Parte A: Deshabilitar el uso obligatorio de controladores firmados</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parte-b-instalacion-desde-la-consola">Parte B: Instalación desde la consola</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2. Instalación de Bricx Command Center (BricxCC)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">3. Primera prueba de funcionamiento: Mover un motor</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacion-de-software-en-windows-11">Instalación de Software en Windows 11</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacion-en-windows-10-y-windows-11">Instalación en Windows 10 y Windows 11</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Parte A: Deshabilitar el uso obligatorio de controladores firmados</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parte-a-deshabilitar-el-uso-obligatorio-de-controladores-firmados">Parte A: Deshabilitar el uso obligatorio de controladores firmados</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parte-b-instalacion-desde-la-consola-para-evitar-el-bloqueo-smartscreen">Parte B: Instalación desde la consola (Para evitar el bloqueo SmartScreen)</a></li>
 </ul>
 </li>
@@ -721,9 +554,6 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacion-de-bricx-command-center-todos-los-windows">Instalación de Bricx Command Center (Todos los Windows)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#primera-prueba-mover-un-motor">Primera prueba: Mover un motor</a></li>
 </ul>
-</li>
-</ul>
-
   </nav></div>
 
 </div></div>

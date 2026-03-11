@@ -7,9 +7,7 @@ root: intro # Esta es tu portada (intro.md)
 parts:
   - caption: Primeros Pasos
     chapters:
-      - file: instalacion_software_w7
-      - file: instalacion_software_w10
-      - file: instalacion_software_w11
+      - file: instalacion_software
   #     - file: introduccion_piezas
       - file: inventario_kits
 

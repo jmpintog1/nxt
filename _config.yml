@@ -3,6 +3,7 @@
 
 title: El Libro de LEGO
 author: José Miguel Pinto
+copyright: "2026"
 logo: logo.png
 
 # Force re-execution of notebooks on each build.

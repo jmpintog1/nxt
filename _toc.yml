@@ -13,15 +13,15 @@ parts:
   #     - file: introduccion_piezas
       - file: inventario_kits
 
-  # - caption: Guías de Ensamblaje
-  #   chapters:
-  #     - file: ensamblaje_basico
+  - caption: Guías de Ensamblaje
+    chapters:
+      - file: ensamblaje_basico
   #     - file: modelos_avanzados
   #       sections:
   #         - file: vehiculo_explorador
   #         - file: brazo_robotico
 
-  # - caption: Programación y Control
-  #   chapters:
-  #     - file: conceptos_programacion
+  - caption: Programación y Control
+    chapters:
+      - file: conceptos_programacion
   #     - file: control_motores_sensores

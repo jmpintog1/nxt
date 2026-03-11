@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>&lt;no title&gt; &#8212; El Libro de LEGO</title>
+    <title>La Base Motriz &#8212; El Libro de LEGO</title>
   
   
   
@@ -65,8 +65,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'ensamblaje_basico';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="modelos_avanzados.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="inventario_kits.html" />
+    <link rel="next" title="Programación y Control: Conceptos Básicos en NXC" href="conceptos_programacion.html" />
+    <link rel="prev" title="Inventario del Kit NXT: ¿Qué hay en la caja?" href="inventario_kits.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -168,7 +168,22 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Primeros Pasos</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="instalacion_software_w7.html">Instalación de Software en Windows 7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="instalacion_software_w10.html">Instalación de Software en Windows 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="instalacion_software_w11.html">Instalación de Software en Windows 11</a></li>
+<li class="toctree-l1"><a class="reference internal" href="inventario_kits.html">Inventario del Kit NXT: ¿Qué hay en la caja?</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Guías de Ensamblaje</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">La Base Motriz</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Programación y Control</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="conceptos_programacion.html">Programación y Control: Conceptos Básicos en NXC</a></li>
+</ul>
+
     </div>
 </nav></div>
     </div>
@@ -352,7 +367,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><no title></h1>
+    <h1>La Base Motriz</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -361,9 +376,19 @@ document.write(`
                 <h2> Contents </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conceptos-de-diseno-de-la-base-motriz">1. Conceptos de Diseño de la Base Motriz</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preparando-los-componentes-principales">2. Preparando los Componentes Principales</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pasos-de-ensamblaje-estructura-sugerida">3. Pasos de Ensamblaje (Estructura Sugerida)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-1-unir-los-motores">Paso 1: Unir los Motores</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-2-montar-el-bloque-nxt">Paso 2: Montar el Bloque NXT</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-3-colocar-las-ruedas-principales">Paso 3: Colocar las Ruedas Principales</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-4-el-apoyo-trasero">Paso 4: El Apoyo Trasero</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-5-cableado">Paso 5: Cableado</a></li>
 </ul>
-
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comprobacion-fisica">4. Comprobación Física</a></li>
+</ul>
             </nav>
         </div>
     </div>
@@ -374,7 +399,73 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  
+  <section class="tex2jax_ignore mathjax_ignore" id="la-base-motriz">
+<h1>La Base Motriz<a class="headerlink" href="#la-base-motriz" title="Permalink to this heading">#</a></h1>
+<p>Antes de construir robots complejos como brazos mecánicos o clasificadores de color, necesitamos dominar la estructura más fundamental en la robótica móvil: <strong>La Base Motriz</strong> (o <em>Driving Base</em>).</p>
+<p>Esta estructura simple de dos ruedas y un punto de apoyo libre nos permitirá probar el movimiento básico (avanzar, retroceder y girar) y servirá como chasis para añadir sensores más adelante.</p>
+<section id="conceptos-de-diseno-de-la-base-motriz">
+<h2>1. Conceptos de Diseño de la Base Motriz<a class="headerlink" href="#conceptos-de-diseno-de-la-base-motriz" title="Permalink to this heading">#</a></h2>
+<p>El diseño de esta base se sustenta en tres principios clave para la estabilidad y el control:</p>
+<ol class="arabic simple">
+<li><p><strong>Centro de Gravedad Bajo:</strong> El bloque inteligente NXT, que es la pieza más pesada (especialmente si usa pilas AA), debe ir montado lo más bajo posible o bien centrado sobre el eje de las ruedas principales para evitar que el robot vuelque al frenar de golpe.</p></li>
+<li><p><strong>Tracción Independiente (Drive Diferencial):</strong> Usaremos dos motores independientes, uno para la rueda izquierda y otro para la derecha. Esto nos permite girar sobre el propio eje del robot (haciendo que una rueda avance y la otra retroceda simultáneamente).</p></li>
+<li><p><strong>El Tercer Punto de Apoyo:</strong> Como solo tenemos dos ruedas motrices, necesitamos un tercer punto para que el robot no arrastre la parte trasera. Usaremos una “rueda loca” (una rueda pequeña pivotante) o una pieza de plástico lisa que deslice sobre el suelo.</p></li>
+</ol>
+</section>
+<section id="preparando-los-componentes-principales">
+<h2>2. Preparando los Componentes Principales<a class="headerlink" href="#preparando-los-componentes-principales" title="Permalink to this heading">#</a></h2>
+<p>Para esta construcción inicial, separa las siguientes piezas de tu kit:</p>
+<ul class="simple">
+<li><p><strong>[ ] 1x Bloque Inteligente NXT</strong></p></li>
+<li><p><strong>[ ] 2x Servomotores Interactivos</strong></p></li>
+<li><p><strong>[ ] 2x Ruedas grandes con sus neumáticos</strong></p></li>
+<li><p><strong>[ ] 1x Rueda pequeña o pieza de apoyo deslizante</strong></p></li>
+<li><p><strong>[ ] 2x Cables de conexión NXT cortos o medianos</strong></p></li>
+<li><p><strong>[ ] Vigas (Beams) largas (de 11 o 15 hoyos) y pines de conexión (negros y azules)</strong></p></li>
+</ul>
+</section>
+<section id="pasos-de-ensamblaje-estructura-sugerida">
+<h2>3. Pasos de Ensamblaje (Estructura Sugerida)<a class="headerlink" href="#pasos-de-ensamblaje-estructura-sugerida" title="Permalink to this heading">#</a></h2>
+<p><em>(Nota para el autor: En esta sección de tu libro final, lo ideal es incluir imágenes o diagramas generados en software como Studio 2.0. Por ahora, describiremos la lógica del armado paso a paso).</em></p>
+<section id="paso-1-unir-los-motores">
+<h3>Paso 1: Unir los Motores<a class="headerlink" href="#paso-1-unir-los-motores" title="Permalink to this heading">#</a></h3>
+<p>Comienza uniendo los dos servomotores espalda con espalda. Utiliza pines negros (con fricción) y un par de vigas cortas para asegurarlos firmemente. Las cabezas naranjas giratorias de los motores deben quedar apuntando hacia afuera, en direcciones opuestas.</p>
+</section>
+<section id="paso-2-montar-el-bloque-nxt">
+<h3>Paso 2: Montar el Bloque NXT<a class="headerlink" href="#paso-2-montar-el-bloque-nxt" title="Permalink to this heading">#</a></h3>
+<p>Coloca el bloque NXT sobre los motores unidos. Utiliza vigas en forma de “L” (Liftarms angulados) y pines para anclar la base del bloque a la estructura de los motores. Asegúrate de que los puertos de letras (A, B, C) queden accesibles para conectar los motores, y los puertos numéricos (1, 2, 3, 4) queden libres para los futuros sensores.</p>
+</section>
+<section id="paso-3-colocar-las-ruedas-principales">
+<h3>Paso 3: Colocar las Ruedas Principales<a class="headerlink" href="#paso-3-colocar-las-ruedas-principales" title="Permalink to this heading">#</a></h3>
+<p>Inserta un eje en cruz corto en el centro de cada cabeza naranja del motor y luego coloca las ruedas grandes. Asegúralas con un tope pequeño (bush) si el eje es muy largo, para que las ruedas no se salgan al girar.</p>
+</section>
+<section id="paso-4-el-apoyo-trasero">
+<h3>Paso 4: El Apoyo Trasero<a class="headerlink" href="#paso-4-el-apoyo-trasero" title="Permalink to this heading">#</a></h3>
+<p>En la parte posterior de la estructura de los motores, añade una extensión usando vigas largas. Al final de esta extensión, monta la rueda pequeña pivotante o la pieza deslizante de plástico. Asegúrate de que, al apoyar el robot en el suelo, quede nivelado horizontalmente.</p>
+</section>
+<section id="paso-5-cableado">
+<h3>Paso 5: Cableado<a class="headerlink" href="#paso-5-cableado" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Toma un cable NXT y conecta el <strong>Motor Izquierdo</strong> al <strong>Puerto B</strong> del bloque.</p></li>
+<li><p>Toma el segundo cable y conecta el <strong>Motor Derecho</strong> al <strong>Puerto C</strong>.</p></li>
+</ol>
+<p><em>Nota: Es una convención en la comunidad NXT usar los puertos B y C para la tracción principal, dejando el puerto A libre para un motor auxiliar (como una garra o un brazo).</em></p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="comprobacion-fisica">
+<h2>4. Comprobación Física<a class="headerlink" href="#comprobacion-fisica" title="Permalink to this heading">#</a></h2>
+<p>Antes de encenderlo, haz esta prueba rápida:</p>
+<ol class="arabic simple">
+<li><p>Levanta el robot del suelo.</p></li>
+<li><p>Gira suavemente con la mano la rueda izquierda. Deberías sentir la resistencia del motor.</p></li>
+<li><p>Gira la rueda derecha.</p></li>
+<li><p>Revisa que ningún cable esté rozando contra las ruedas o el suelo.</p></li>
+</ol>
+<p>¡Felicidades! Tienes tu Base Motriz lista. En el siguiente capítulo, escribiremos nuestro primer programa en BricxCC para hacer que este vehículo cobre vida.</p>
+</section>
+</section>
+
     <script type="text/x-thebe-config">
     {
         requestKernel: true,
@@ -411,15 +502,15 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">Inventario del Kit NXT: ¿Qué hay en la caja?</p>
       </div>
     </a>
     <a class="right-next"
-       href="modelos_avanzados.html"
+       href="conceptos_programacion.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">Programación y Control: Conceptos Básicos en NXC</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -437,9 +528,19 @@ document.write(`
     <i class="fa-solid fa-list"></i> Contents
   </div>
   <nav class="bd-toc-nav page-toc">
-    <ul class="simple visible nav section-nav flex-column">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conceptos-de-diseno-de-la-base-motriz">1. Conceptos de Diseño de la Base Motriz</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preparando-los-componentes-principales">2. Preparando los Componentes Principales</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pasos-de-ensamblaje-estructura-sugerida">3. Pasos de Ensamblaje (Estructura Sugerida)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-1-unir-los-motores">Paso 1: Unir los Motores</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-2-montar-el-bloque-nxt">Paso 2: Montar el Bloque NXT</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-3-colocar-las-ruedas-principales">Paso 3: Colocar las Ruedas Principales</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-4-el-apoyo-trasero">Paso 4: El Apoyo Trasero</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#paso-5-cableado">Paso 5: Cableado</a></li>
 </ul>
-
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comprobacion-fisica">4. Comprobación Física</a></li>
+</ul>
   </nav></div>
 
 </div></div>

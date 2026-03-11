@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Bienvenidos al Libro de LEGO &#8212; El Libro de LEGO</title>
+    <title>Instalación de Software en Windows 11 &#8212; El Libro de LEGO</title>
   
   
   
@@ -62,10 +62,10 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'instalacion_software_w11';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Instalación de Software en Windows 7" href="instalacion_software_w7.html" />
+    <link rel="prev" title="Instalación de Software en Windows 10" href="instalacion_software_w10.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -141,7 +141,7 @@ const thebe_selector_output = ".output, .cell_output"
 
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -161,17 +161,17 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Bienvenidos al Libro de LEGO
                 </a>
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Primeros Pasos</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="instalacion_software_w7.html">Instalación de Software en Windows 7</a></li>
 <li class="toctree-l1"><a class="reference internal" href="instalacion_software_w10.html">Instalación de Software en Windows 10</a></li>
-<li class="toctree-l1"><a class="reference internal" href="instalacion_software_w11.html">Instalación de Software en Windows 11</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Instalación de Software en Windows 11</a></li>
 </ul>
 
     </div>
@@ -243,7 +243,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Finstalacion_software_w11.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -273,7 +273,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/instalacion_software_w11.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -344,7 +344,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -355,11 +357,26 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Bienvenidos al Libro de LEGO</h1>
+    <h1>Instalación de Software en Windows 11</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacion-en-windows-10-y-windows-11">Instalación en Windows 10 y Windows 11</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parte-a-deshabilitar-el-uso-obligatorio-de-controladores-firmados">Parte A: Deshabilitar el uso obligatorio de controladores firmados</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parte-b-instalacion-desde-la-consola-para-evitar-el-bloqueo-smartscreen">Parte B: Instalación desde la consola (Para evitar el bloqueo SmartScreen)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacion-en-windows-7">Instalación en Windows 7</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacion-de-bricx-command-center-todos-los-windows">Instalación de Bricx Command Center (Todos los Windows)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#primera-prueba-mover-un-motor">Primera prueba: Mover un motor</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -369,15 +386,95 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="bienvenidos-al-libro-de-lego">
-<h1>Bienvenidos al Libro de LEGO<a class="headerlink" href="#bienvenidos-al-libro-de-lego" title="Permalink to this heading">#</a></h1>
-<p>Este libro documenta proyectos, guías de ensamblaje y programación de modelos de robótica.</p>
-<!--
-![Portada de LEGO](ruta-a-tu-imagen-lego.jpg)
--->
-<p>Explora el índice para ver los distintos modelos y tutoriales.</p>
-<div class="toctree-wrapper compound">
+  <section class="tex2jax_ignore mathjax_ignore" id="instalacion-de-software-en-windows-11">
+<h1>Instalación de Software en Windows 11<a class="headerlink" href="#instalacion-de-software-en-windows-11" title="Permalink to this heading">#</a></h1>
+<p>Para programar y comunicarnos con nuestro bloque LEGO Mindstorms NXT, necesitamos instalar el controlador de comunicación (<strong>Fantom Driver</strong>) y el entorno de desarrollo (<strong>Bricx Command Center</strong> o BricxCC).</p>
+<p>El proceso varía dependiendo de tu sistema operativo, ya que el Fantom Driver es un controlador antiguo y las versiones más recientes de Windows bloquean su instalación por defecto. Busca tu versión a continuación:</p>
+<hr class="docutils" />
+<section id="instalacion-en-windows-10-y-windows-11">
+<h2>Instalación en Windows 10 y Windows 11<a class="headerlink" href="#instalacion-en-windows-10-y-windows-11" title="Permalink to this heading">#</a></h2>
+<p>Ambos sistemas operativos tienen políticas de seguridad estrictas que bloquean los controladores no firmados digitalmente. Para instalar el Fantom Driver, debemos dividir el proceso en dos partes: deshabilitar la firma de controladores y luego instalar desde la consola.</p>
+<section id="parte-a-deshabilitar-el-uso-obligatorio-de-controladores-firmados">
+<h3>Parte A: Deshabilitar el uso obligatorio de controladores firmados<a class="headerlink" href="#parte-a-deshabilitar-el-uso-obligatorio-de-controladores-firmados" title="Permalink to this heading">#</a></h3>
+<p><strong>En Windows 10:</strong></p>
+<ol class="arabic simple">
+<li><p>Ve a <strong>Configuración</strong> &gt; <strong>Actualización y seguridad</strong> &gt; <strong>Recuperación</strong>.</p></li>
+<li><p>En <em>Inicio avanzado</em>, haz clic en <strong>Reiniciar ahora</strong>.</p></li>
+<li><p>Selecciona <strong>Solucionar problemas</strong> &gt; <strong>Opciones avanzadas</strong> &gt; <strong>Configuración de inicio</strong> y haz clic en <strong>Reiniciar</strong>.</p></li>
+<li><p>Al reiniciar, presiona <strong>7</strong> o <strong>F7</strong> para seleccionar <strong>Deshabilitar el uso obligatorio de controladores firmados</strong>.</p></li>
+</ol>
+<p><strong>En Windows 11:</strong></p>
+<ol class="arabic simple">
+<li><p>Ve a <strong>Configuración</strong> &gt; <strong>Sistema</strong> &gt; <strong>Recuperación</strong>.</p></li>
+<li><p>En <em>Inicio avanzado</em>, haz clic en <strong>Reiniciar ahora</strong>.</p></li>
+<li><p>Sigue la misma ruta: <strong>Solucionar problemas</strong> &gt; <strong>Opciones avanzadas</strong> &gt; <strong>Configuración de inicio</strong> &gt; <strong>Reiniciar</strong>.</p></li>
+<li><p>Presiona <strong>7</strong> o <strong>F7</strong> en la pantalla de opciones.</p></li>
+</ol>
+</section>
+<section id="parte-b-instalacion-desde-la-consola-para-evitar-el-bloqueo-smartscreen">
+<h3>Parte B: Instalación desde la consola (Para evitar el bloqueo SmartScreen)<a class="headerlink" href="#parte-b-instalacion-desde-la-consola-para-evitar-el-bloqueo-smartscreen" title="Permalink to this heading">#</a></h3>
+<p>Incluso tras el reinicio, Windows puede mostrar el mensaje “Windows protegió su PC”. Para evitarlo:</p>
+<ol class="arabic">
+<li><p>Abre el menú Inicio, escribe <code class="docutils literal notranslate"><span class="pre">cmd</span></code>, haz clic derecho en <strong>Símbolo del sistema</strong> (o Terminal en W11) y selecciona <strong>Ejecutar como administrador</strong>.</p></li>
+<li><p>Usa el comando <code class="docutils literal notranslate"><span class="pre">cd</span></code> para ir a la carpeta del instalador. Ejemplo:</p>
+<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>cd C:\Ruta\A\Tu\Carpeta\Descargas\FantomDriver
+</pre></div>
 </div>
+</li>
+<li><p>Escribe el nombre del ejecutable (ej. <code class="docutils literal notranslate"><span class="pre">setup.exe</span></code>) y presiona <strong>Enter</strong>.</p></li>
+<li><p>Sigue las instrucciones y acepta cuando Windows pregunte si deseas instalar el controlador no firmado.</p></li>
+</ol>
+</section>
+</section>
+<hr class="docutils" />
+<section id="instalacion-en-windows-7">
+<h2>Instalación en Windows 7<a class="headerlink" href="#instalacion-en-windows-7" title="Permalink to this heading">#</a></h2>
+<p>En Windows 7 el proceso es directo y no requiere reiniciar el equipo.</p>
+<ol class="arabic simple">
+<li><p>Descarga y extrae el archivo de instalación del <strong>Fantom Driver</strong>.</p></li>
+<li><p>Haz doble clic en el archivo ejecutable (<code class="docutils literal notranslate"><span class="pre">setup.exe</span></code>).</p></li>
+<li><p>Sigue las instrucciones del asistente. Si aparece una advertencia de seguridad, haz clic en “Ejecutar” o “Instalar de todas formas”.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="instalacion-de-bricx-command-center-todos-los-windows">
+<h2>Instalación de Bricx Command Center (Todos los Windows)<a class="headerlink" href="#instalacion-de-bricx-command-center-todos-los-windows" title="Permalink to this heading">#</a></h2>
+<p>Una vez instalado el Fantom Driver, el proceso para el entorno de programación es el mismo para cualquier versión de Windows:</p>
+<ol class="arabic simple">
+<li><p>Descarga el instalador de <strong>BricxCC</strong>.</p></li>
+<li><p>Ejecútalo e instálalo con las opciones por defecto.</p></li>
+<li><p><strong>Enciende tu bloque LEGO NXT</strong> y conéctalo al PC mediante el cable USB.</p></li>
+<li><p>Abre BricxCC. En la ventana “Find Brick”:</p>
+<ul class="simple">
+<li><p><strong>Port</strong>: selecciona <strong>USB</strong>.</p></li>
+<li><p><strong>Brick Type</strong>: selecciona <strong>NXT</strong>.</p></li>
+<li><p><strong>Firmware</strong>: selecciona <strong>Standard</strong>.</p></li>
+</ul>
+</li>
+<li><p>Haz clic en <strong>OK</strong>. BricxCC debería abrirse correctamente.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="primera-prueba-mover-un-motor">
+<h2>Primera prueba: Mover un motor<a class="headerlink" href="#primera-prueba-mover-un-motor" title="Permalink to this heading">#</a></h2>
+<p>Para confirmar que todo funciona, conecta un motor al <strong>Puerto B</strong> del bloque NXT.</p>
+<ol class="arabic simple">
+<li><p>En BricxCC, ve a <em>File &gt; New</em>.</p></li>
+<li><p>Escribe el siguiente código en NXC:</p></li>
+</ol>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">task</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">OnFwd</span><span class="p">(</span><span class="n">OUT_B</span><span class="p">,</span><span class="w"> </span><span class="mi">75</span><span class="p">);</span><span class="w"> </span><span class="c1">// Enciende el motor del puerto B al 75% de potencia</span>
+<span class="w">    </span><span class="n">Wait</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span><span class="w">       </span><span class="c1">// Mantiene la acción durante 2 segundos (2000 ms)</span>
+<span class="w">    </span><span class="n">Off</span><span class="p">(</span><span class="n">OUT_B</span><span class="p">);</span><span class="w">       </span><span class="c1">// Apaga el motor</span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Guarda el archivo.</p></li>
+<li><p>Presiona <strong>Download and Run</strong> (o <code class="docutils literal notranslate"><span class="pre">Ctrl+F5</span></code>). El código se transferirá y el motor B girará durante dos segundos. ¡Tu entorno está listo!</p></li>
+</ol>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -410,14 +507,14 @@ document.write(`
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
-    <a class="right-next"
-       href="instalacion_software_w7.html"
-       title="next page">
+    <a class="left-prev"
+       href="instalacion_software_w10.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Instalación de Software en Windows 7</p>
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Instalación de Software en Windows 10</p>
       </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -425,6 +522,27 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacion-en-windows-10-y-windows-11">Instalación en Windows 10 y Windows 11</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parte-a-deshabilitar-el-uso-obligatorio-de-controladores-firmados">Parte A: Deshabilitar el uso obligatorio de controladores firmados</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parte-b-instalacion-desde-la-consola-para-evitar-el-bloqueo-smartscreen">Parte B: Instalación desde la consola (Para evitar el bloqueo SmartScreen)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacion-en-windows-7">Instalación en Windows 7</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacion-de-bricx-command-center-todos-los-windows">Instalación de Bricx Command Center (Todos los Windows)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#primera-prueba-mover-un-motor">Primera prueba: Mover un motor</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

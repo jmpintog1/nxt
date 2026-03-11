@@ -7,6 +7,7 @@ root: intro # Esta es tu portada (intro.md)
 parts:
   - caption: Primeros Pasos
     chapters:
+      - file: instalacion_software
       - file: introduccion_piezas
       - file: inventario_kits
 

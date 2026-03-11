@@ -1,4 +1,4 @@
-# Primeros Pasos: Instalación de Software en Windows 10
+# Instalación de Software en Windows 10
 
 Para programar y comunicarnos con nuestro bloque LEGO Mindstorms NXT desde un equipo moderno con Windows 10, necesitamos instalar dos componentes fundamentales: el controlador de comunicación (Fantom Driver) y el entorno de desarrollo (Bricx Command Center).
 

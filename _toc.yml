@@ -8,18 +8,18 @@ parts:
   - caption: Primeros Pasos
     chapters:
       - file: instalacion_software
-      - file: introduccion_piezas
-      - file: inventario_kits
+  #     - file: introduccion_piezas
+  #     - file: inventario_kits
 
-  - caption: Guías de Ensamblaje
-    chapters:
-      - file: ensamblaje_basico
-      - file: modelos_avanzados
-        sections:
-          - file: vehiculo_explorador
-          - file: brazo_robotico
+  # - caption: Guías de Ensamblaje
+  #   chapters:
+  #     - file: ensamblaje_basico
+  #     - file: modelos_avanzados
+  #       sections:
+  #         - file: vehiculo_explorador
+  #         - file: brazo_robotico
 
-  - caption: Programación y Control
-    chapters:
-      - file: conceptos_programacion
-      - file: control_motores_sensores
+  # - caption: Programación y Control
+  #   chapters:
+  #     - file: conceptos_programacion
+  #     - file: control_motores_sensores

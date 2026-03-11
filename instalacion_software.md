@@ -4,10 +4,20 @@ Para programar y comunicarnos con nuestro bloque LEGO Mindstorms NXT desde un eq
 
 ## 1. Instalación del Fantom Driver
 
-El Fantom Driver es el controlador oficial que permite que el sistema operativo reconozca el bloque NXT al conectarlo mediante el cable USB.
+El Fantom Driver es el controlador oficial que permite que el sistema operativo reconozca el bloque NXT al conectarlo mediante el cable USB. Como es un software antiguo, Windows 10 bloqueará su instalación por no tener una firma digital reciente. 
 
-**Solución al bloqueo de Windows 10:**
-Al intentar ejecutar el instalador del Fantom Driver, es muy común que el sistema operativo lo detenga mostrando una pantalla azul con el mensaje "Windows protegió su PC". Para evitar este bloqueo y realizar la instalación, debemos usar la consola de comandos con privilegios elevados:
+Para instalarlo exitosamente, debemos dividir el proceso en dos partes: primero, deshabilitar la firma de controladores y, segundo, instalarlo como administrador.
+
+### Parte A: Deshabilitar el uso obligatorio de controladores firmados
+1. Haz clic en el menú **Inicio** de Windows y selecciona el ícono del engranaje para abrir **Configuración**.
+2. Ve a **Actualización y seguridad** y luego selecciona **Recuperación** en el menú lateral izquierdo.
+3. En la sección *Inicio avanzado*, haz clic en el botón **Reiniciar ahora**. Tu computador se reiniciará en una pantalla azul con varias opciones.
+4. Selecciona **Solucionar problemas** > **Opciones avanzadas** > **Configuración de inicio**.
+5. Haz clic en el botón **Reiniciar**.
+6. Al volver a encender, verás una lista de opciones. Presiona la tecla **7** o **F7** en tu teclado para seleccionar **Deshabilitar el uso obligatorio de controladores firmados**. Windows iniciará normalmente.
+
+### Parte B: Instalación desde la consola
+Incluso con el paso anterior, Windows puede mostrar una pantalla azul indicando "Windows protegió su PC" al intentar abrir el instalador. Para evitarlo:
 
 1. Ve al menú Inicio de Windows, escribe `cmd`.
 2. Haz clic derecho sobre la aplicación **Símbolo del sistema** y selecciona **Ejecutar como administrador**.
@@ -16,7 +26,7 @@ Al intentar ejecutar el instalador del Fantom Driver, es muy común que el siste
    cd C:\Ruta\A\Tu\Carpeta\Descargas\FantomDriver
    ```
 4. Escribe el nombre del archivo ejecutable (por ejemplo, `setup.exe` o el instalador `.msi` correspondiente) y presiona **Enter**.
-5. Ahora el asistente de instalación se abrirá sin bloqueos. Sigue las instrucciones en pantalla para finalizar el proceso.
+5. Ahora el asistente de instalación se abrirá sin bloqueos. Sigue las instrucciones en pantalla para finalizar el proceso. En un momento te pedirá confirmación para instalar un controlador no firmado; acéptalo.
 
 ## 2. Instalación de Bricx Command Center (BricxCC)
 

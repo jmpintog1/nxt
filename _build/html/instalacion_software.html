@@ -366,7 +366,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacion-del-fantom-driver">1. Instalación del Fantom Driver</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacion-del-fantom-driver">1. Instalación del Fantom Driver</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parte-a-deshabilitar-el-uso-obligatorio-de-controladores-firmados">Parte A: Deshabilitar el uso obligatorio de controladores firmados</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parte-b-instalacion-desde-la-consola">Parte B: Instalación desde la consola</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacion-de-bricx-command-center-bricxcc">2. Instalación de Bricx Command Center (BricxCC)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#primera-prueba-de-funcionamiento-mover-un-motor">3. Primera prueba de funcionamiento: Mover un motor</a></li>
 </ul>
@@ -385,9 +389,22 @@ document.write(`
 <p>Para programar y comunicarnos con nuestro bloque LEGO Mindstorms NXT desde un equipo moderno con Windows 10, necesitamos instalar dos componentes fundamentales: el controlador de comunicación (Fantom Driver) y el entorno de desarrollo (Bricx Command Center).</p>
 <section id="instalacion-del-fantom-driver">
 <h2>1. Instalación del Fantom Driver<a class="headerlink" href="#instalacion-del-fantom-driver" title="Permalink to this heading">#</a></h2>
-<p>El Fantom Driver es el controlador oficial que permite que el sistema operativo reconozca el bloque NXT al conectarlo mediante el cable USB.</p>
-<p><strong>Solución al bloqueo de Windows 10:</strong>
-Al intentar ejecutar el instalador del Fantom Driver, es muy común que el sistema operativo lo detenga mostrando una pantalla azul con el mensaje “Windows protegió su PC”. Para evitar este bloqueo y realizar la instalación, debemos usar la consola de comandos con privilegios elevados:</p>
+<p>El Fantom Driver es el controlador oficial que permite que el sistema operativo reconozca el bloque NXT al conectarlo mediante el cable USB. Como es un software antiguo, Windows 10 bloqueará su instalación por no tener una firma digital reciente.</p>
+<p>Para instalarlo exitosamente, debemos dividir el proceso en dos partes: primero, deshabilitar la firma de controladores y, segundo, instalarlo como administrador.</p>
+<section id="parte-a-deshabilitar-el-uso-obligatorio-de-controladores-firmados">
+<h3>Parte A: Deshabilitar el uso obligatorio de controladores firmados<a class="headerlink" href="#parte-a-deshabilitar-el-uso-obligatorio-de-controladores-firmados" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Haz clic en el menú <strong>Inicio</strong> de Windows y selecciona el ícono del engranaje para abrir <strong>Configuración</strong>.</p></li>
+<li><p>Ve a <strong>Actualización y seguridad</strong> y luego selecciona <strong>Recuperación</strong> en el menú lateral izquierdo.</p></li>
+<li><p>En la sección <em>Inicio avanzado</em>, haz clic en el botón <strong>Reiniciar ahora</strong>. Tu computador se reiniciará en una pantalla azul con varias opciones.</p></li>
+<li><p>Selecciona <strong>Solucionar problemas</strong> &gt; <strong>Opciones avanzadas</strong> &gt; <strong>Configuración de inicio</strong>.</p></li>
+<li><p>Haz clic en el botón <strong>Reiniciar</strong>.</p></li>
+<li><p>Al volver a encender, verás una lista de opciones. Presiona la tecla <strong>7</strong> o <strong>F7</strong> en tu teclado para seleccionar <strong>Deshabilitar el uso obligatorio de controladores firmados</strong>. Windows iniciará normalmente.</p></li>
+</ol>
+</section>
+<section id="parte-b-instalacion-desde-la-consola">
+<h3>Parte B: Instalación desde la consola<a class="headerlink" href="#parte-b-instalacion-desde-la-consola" title="Permalink to this heading">#</a></h3>
+<p>Incluso con el paso anterior, Windows puede mostrar una pantalla azul indicando “Windows protegió su PC” al intentar abrir el instalador. Para evitarlo:</p>
 <ol class="arabic">
 <li><p>Ve al menú Inicio de Windows, escribe <code class="docutils literal notranslate"><span class="pre">cmd</span></code>.</p></li>
 <li><p>Haz clic derecho sobre la aplicación <strong>Símbolo del sistema</strong> y selecciona <strong>Ejecutar como administrador</strong>.</p></li>
@@ -397,8 +414,9 @@ Al intentar ejecutar el instalador del Fantom Driver, es muy común que el siste
 </div>
 </li>
 <li><p>Escribe el nombre del archivo ejecutable (por ejemplo, <code class="docutils literal notranslate"><span class="pre">setup.exe</span></code> o el instalador <code class="docutils literal notranslate"><span class="pre">.msi</span></code> correspondiente) y presiona <strong>Enter</strong>.</p></li>
-<li><p>Ahora el asistente de instalación se abrirá sin bloqueos. Sigue las instrucciones en pantalla para finalizar el proceso.</p></li>
+<li><p>Ahora el asistente de instalación se abrirá sin bloqueos. Sigue las instrucciones en pantalla para finalizar el proceso. En un momento te pedirá confirmación para instalar un controlador no firmado; acéptalo.</p></li>
 </ol>
+</section>
 </section>
 <section id="instalacion-de-bricx-command-center-bricxcc">
 <h2>2. Instalación de Bricx Command Center (BricxCC)<a class="headerlink" href="#instalacion-de-bricx-command-center-bricxcc" title="Permalink to this heading">#</a></h2>
@@ -503,7 +521,11 @@ Al intentar ejecutar el instalador del Fantom Driver, es muy común que el siste
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacion-del-fantom-driver">1. Instalación del Fantom Driver</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacion-del-fantom-driver">1. Instalación del Fantom Driver</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parte-a-deshabilitar-el-uso-obligatorio-de-controladores-firmados">Parte A: Deshabilitar el uso obligatorio de controladores firmados</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parte-b-instalacion-desde-la-consola">Parte B: Instalación desde la consola</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacion-de-bricx-command-center-bricxcc">2. Instalación de Bricx Command Center (BricxCC)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#primera-prueba-de-funcionamiento-mover-un-motor">3. Primera prueba de funcionamiento: Mover un motor</a></li>
 </ul>

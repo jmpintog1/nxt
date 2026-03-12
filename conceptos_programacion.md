@@ -1,4 +1,4 @@
-# Programación y Control: Conceptos Básicos en NXC
+# Conceptos Básicos en NXC
 
 Para darle vida a nuestra Base Motriz, dejaremos atrás los lenguajes de bloques visuales y utilizaremos **NXC** (*Not eXactly C*). NXC es un lenguaje de programación basado en texto, muy similar a C, lo que lo convierte en una excelente herramienta para introducir la lógica de programación formal y aplicarla a fenómenos del mundo físico, como el movimiento, la velocidad y las trayectorias.
 

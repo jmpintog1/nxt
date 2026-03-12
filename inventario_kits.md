@@ -1,4 +1,4 @@
-# Inventario del Kit NXT: ¿Qué hay en la caja?
+# Inventario del Kit NXT
 
 Antes de comenzar a ensamblar modelos complejos o escribir líneas de código, es fundamental conocer las herramientas que tenemos a nuestra disposición. Un kit LEGO Mindstorms NXT completo contiene cientos de piezas, pero para asegurar el funcionamiento básico de cualquier proyecto, debemos verificar primero los componentes electrónicos y estructurales principales.
 

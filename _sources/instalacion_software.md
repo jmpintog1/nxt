@@ -1,4 +1,4 @@
-# Instalación de Software en Windows
+# Instalación de Software
 
 Para programar y comunicarnos con nuestro bloque LEGO Mindstorms NXT, necesitamos instalar el controlador de comunicación (**Fantom Driver**) y el entorno de desarrollo (**Bricx Command Center** o BricxCC).
 

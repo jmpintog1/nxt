@@ -65,6 +65,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'conceptos_programacion';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Biomímesis: El Sexto Sentido del Murciélago 🦇" href="actividad_1.html" />
+    <link rel="prev" title="La Base Motriz" href="ensamblaje_basico.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -171,9 +173,17 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="instalacion_software.html">Instalación de Software</a></li>
 <li class="toctree-l1"><a class="reference internal" href="inventario_kits.html">Inventario del Kit NXT</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Guías de Ensamblaje</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="ensamblaje_basico.html">La Base Motriz</a></li>
+</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Programación y Control</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Conceptos Básicos en NXC</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Actividades</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="actividad_1.html">Biomímesis: El Sexto Sentido del Murciélago 🦇</a></li>
 </ul>
 
     </div>
@@ -395,11 +405,11 @@ document.write(`
 <section id="la-estructura-de-un-programa">
 <h2>1. La Estructura de un Programa<a class="headerlink" href="#la-estructura-de-un-programa" title="Permalink to this heading">#</a></h2>
 <p>Todo programa en NXC necesita un punto de partida principal. Al igual que en C, utilizamos una “tarea principal” llamada <code class="docutils literal notranslate"><span class="pre">task</span> <span class="pre">main()</span></code>. Dentro de las llaves <code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">}</span></code> irán todas las instrucciones que el robot ejecutará de forma secuencial (una instrucción tras otra).</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">task</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">task</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
 <span class="w">    </span><span class="c1">// Aquí escribiremos nuestras instrucciones.</span>
 <span class="w">    </span><span class="c1">// Los textos con doble barra son &quot;comentarios&quot; y el robot los ignora.</span>
-<span class="p">}</span><span class="w"></span>
+<span class="p">}</span>
 </pre></div>
 </div>
 </section>
@@ -436,8 +446,8 @@ document.write(`
 <h2>3. Nuestro Primer Código: Avanzar y Girar<a class="headerlink" href="#nuestro-primer-codigo-avanzar-y-girar" title="Permalink to this heading">#</a></h2>
 <p>Vamos a integrar estos conceptos en un programa completo. El objetivo es que nuestra Base Motriz avance en línea recta por 2 segundos, realice un giro hacia la derecha, y se detenga.</p>
 <p>Abre BricxCC, crea un nuevo archivo (<em>File &gt; New</em>) y escribe el siguiente código:</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">task</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">task</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
 <span class="w">    </span><span class="c1">// 1. Avanzar en línea recta</span>
 <span class="w">    </span><span class="n">OnFwd</span><span class="p">(</span><span class="n">OUT_BC</span><span class="p">,</span><span class="w"> </span><span class="mi">75</span><span class="p">);</span><span class="w">   </span><span class="c1">// Ambos motores (B y C) adelante al 75%</span>
 <span class="w">    </span><span class="n">Wait</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span><span class="w">          </span><span class="c1">// Durante 2 segundos</span>
@@ -445,13 +455,13 @@ document.write(`
 <span class="w">    </span><span class="c1">// 2. Girar a la derecha</span>
 <span class="w">    </span><span class="c1">// Para girar, detenemos el motor interno del giro (C)</span>
 <span class="w">    </span><span class="c1">// y mantenemos avanzando el motor externo (B)</span>
-<span class="w">    </span><span class="n">Off</span><span class="p">(</span><span class="n">OUT_C</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">OnFwd</span><span class="p">(</span><span class="n">OUT_B</span><span class="p">,</span><span class="w"> </span><span class="mi">75</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">Off</span><span class="p">(</span><span class="n">OUT_C</span><span class="p">);</span>
+<span class="w">    </span><span class="n">OnFwd</span><span class="p">(</span><span class="n">OUT_B</span><span class="p">,</span><span class="w"> </span><span class="mi">75</span><span class="p">);</span>
 <span class="w">    </span><span class="n">Wait</span><span class="p">(</span><span class="mi">850</span><span class="p">);</span><span class="w">           </span><span class="c1">// El tiempo de giro dependerá del roce del suelo</span>
 
 <span class="w">    </span><span class="c1">// 3. Detener todo</span>
-<span class="w">    </span><span class="n">Off</span><span class="p">(</span><span class="n">OUT_BC</span><span class="p">);</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="n">Off</span><span class="p">(</span><span class="n">OUT_BC</span><span class="p">);</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 </section>
@@ -496,6 +506,24 @@ document.write(`
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="ensamblaje_basico.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">La Base Motriz</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="actividad_1.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Biomímesis: El Sexto Sentido del Murciélago 🦇</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               

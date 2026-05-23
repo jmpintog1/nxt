@@ -23,3 +23,7 @@ parts:
     chapters:
       - file: conceptos_programacion
   #     - file: control_motores_sensores
+  
+  - caption: Actividades
+    chapters:
+      - file: actividad_1

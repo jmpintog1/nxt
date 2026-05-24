@@ -27,3 +27,6 @@ parts:
   - caption: Actividades
     chapters:
       - file: actividad_1
+      - file: actividad_2
+      - file: actividad_3
+      - file: actividad_4

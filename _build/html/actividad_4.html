@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Ingeniería del Siglo XXI: Sistema de Frenado Autónomo 🚗 &#8212; El Libro de LEGO</title>
+    <title>Frenado Autónomo &#8212; El Libro de LEGO</title>
   
   
   
@@ -67,7 +67,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'actividad_4';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Cazadores de Mitos: ¿Existe realmente la Velocidad Constante? 📊" href="actividad_3.html" />
+    <link rel="prev" title="Telemetría MRU" href="actividad_3.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -184,10 +184,10 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Actividades</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="actividad_1.html">Biomímesis: El Sexto Sentido del Murciélago 🦇</a></li>
-<li class="toctree-l1"><a class="reference internal" href="actividad_2.html">Física del Caos: El Desafío del Transporte Seguro 💧</a></li>
-<li class="toctree-l1"><a class="reference internal" href="actividad_3.html">Cazadores de Mitos: ¿Existe realmente la Velocidad Constante? 📊</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Ingeniería del Siglo XXI: Sistema de Frenado Autónomo 🚗</a></li>
+<li class="toctree-l1"><a class="reference internal" href="actividad_1.html">Ecolocalización</a></li>
+<li class="toctree-l1"><a class="reference internal" href="actividad_2.html">Control de Inercia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="actividad_3.html">Telemetría MRU</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Frenado Autónomo</a></li>
 </ul>
 
     </div>
@@ -373,7 +373,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Ingeniería del Siglo XXI: Sistema de Frenado Autónomo 🚗</h1>
+    <h1>Frenado Autónomo</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -407,8 +407,9 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="ingenieria-del-siglo-xxi-sistema-de-frenado-autonomo">
-<h1>Ingeniería del Siglo XXI: Sistema de Frenado Autónomo 🚗<a class="headerlink" href="#ingenieria-del-siglo-xxi-sistema-de-frenado-autonomo" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="frenado-autonomo">
+<h1>Frenado Autónomo<a class="headerlink" href="#frenado-autonomo" title="Permalink to this heading">#</a></h1>
+<p><strong>Ingeniería del Siglo XXI 🚗</strong></p>
 <p>Los automóviles modernos, como los de Tesla o Volvo, utilizan sistemas de “Control de Crucero Adaptativo” para mantener una distancia segura con el vehículo de adelante. No se limitan a “avanzar y frenar” bruscamente; en su lugar, calculan suavemente la aceleración necesaria utilizando matemáticas avanzadas.</p>
 <p>En este laboratorio, dejaremos atrás las secuencias rígidas y programaremos un <strong>Controlador Proporcional</strong>, el algoritmo matemático fundamental de la robótica industrial y la automatización.</p>
 <div class="cell tag_hide-input docutils container">
@@ -804,11 +805,11 @@ document.write(`
     
     <div style="display: flex; gap: 20px; margin-bottom: 20px; background: #e9ecef; padding: 15px; border-radius: 8px; flex-wrap: wrap; align-items: center; justify-content: space-between;">
         <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
-            <button id="power_16515" style="background-color: #198754; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 14px;">▶ Encender Motor</button>
-            <button id="reset_16515" style="background-color: #6c757d; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 14px;">🔄 Reiniciar</button>
+            <button id="power_23651" style="background-color: #198754; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 14px;">▶ Encender Motor</button>
+            <button id="reset_23651" style="background-color: #6c757d; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 14px;">🔄 Reiniciar</button>
             
             <label style="cursor: pointer; display: flex; align-items: center; gap: 5px; background: #fff; padding: 8px 12px; border-radius: 5px; border: 1px solid #ccc; font-size: 14px; font-weight: bold; color: #495057; margin-left: 10px;">
-                <input type="checkbox" id="sound_chk_16515" style="cursor: pointer; width: 16px; height: 16px;">
+                <input type="checkbox" id="sound_chk_23651" style="cursor: pointer; width: 16px; height: 16px;">
                 🔊 Sonido Motor
             </label>
         </div>
@@ -816,14 +817,14 @@ document.write(`
         <div style="display: flex; gap: 20px; align-items: center;">
             <div style="display: flex; flex-direction: column; align-items: center;">
                 <label style="font-weight: 600; font-size: 0.8em; color: #495057;">Posición del Obstáculo</label>
-                <input type="range" id="target_pos_16515" min="25" max="100" value="60" style="width: 140px; cursor: pointer;">
+                <input type="range" id="target_pos_23651" min="25" max="100" value="60" style="width: 140px; cursor: pointer;">
             </div>
             
             <div style="display: flex; flex-direction: column; align-items: center;">
                 <label style="font-weight: 600; font-size: 0.8em; color: #6f42c1;">Constante Kp</label>
                 <div style="display: flex; align-items: center; gap: 5px;">
-                    <input type="range" id="kp_val_16515" min="0.5" max="15" step="0.5" value="3" style="width: 100px; cursor: pointer;">
-                    <span id="lbl_kp_16515" style="font-weight: bold; font-family: monospace; width: 30px;">3.0</span>
+                    <input type="range" id="kp_val_23651" min="0.5" max="15" step="0.5" value="3" style="width: 100px; cursor: pointer;">
+                    <span id="lbl_kp_23651" style="font-weight: bold; font-family: monospace; width: 30px;">3.0</span>
                 </div>
             </div>
         </div>
@@ -833,46 +834,46 @@ document.write(`
     <div style="display: flex; gap: 15px; justify-content: center; margin-bottom: 15px; flex-wrap: wrap;">
         <div style="background: #fff; padding: 8px 15px; border-radius: 5px; border: 1px solid #ccc; width: 120px; text-align: center;">
             <label style="font-weight: 600; font-size: 0.8em; margin-bottom: 2px; color: #0d6efd; display: block;">Distancia</label>
-            <span id="tele_dist_16515" style="font-weight: bold; font-family: monospace; font-size: 1.1em; color: #212529;">40.0 cm</span>
+            <span id="tele_dist_23651" style="font-weight: bold; font-family: monospace; font-size: 1.1em; color: #212529;">40.0 cm</span>
         </div>
         <div style="background: #fff; padding: 8px 15px; border-radius: 5px; border: 1px solid #ccc; width: 120px; text-align: center;">
             <label style="font-weight: 600; font-size: 0.8em; margin-bottom: 2px; color: #dc3545; display: block;">Error (d - 20)</label>
-            <span id="tele_err_16515" style="font-weight: bold; font-family: monospace; font-size: 1.1em; color: #212529;">20.0 cm</span>
+            <span id="tele_err_23651" style="font-weight: bold; font-family: monospace; font-size: 1.1em; color: #212529;">20.0 cm</span>
         </div>
         <div style="background: #fff; padding: 8px 15px; border-radius: 5px; border: 1px solid #ccc; width: 120px; text-align: center;">
             <label style="font-weight: 600; font-size: 0.8em; margin-bottom: 2px; color: #fd7e14; display: block;">Potencia Motor</label>
-            <span id="tele_pot_16515" style="font-weight: bold; font-family: monospace; font-size: 1.1em; color: #212529;">0 %</span>
+            <span id="tele_pot_23651" style="font-weight: bold; font-family: monospace; font-size: 1.1em; color: #212529;">0 %</span>
         </div>
     </div>
     
     <div style="display: flex; justify-content: center; margin-bottom: 10px;">
-        <canvas id="canvas_sim_16515" width="700" height="200" style="background: #ffffff; border: 1px solid #ccc; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); max-width: 100%;"></canvas>
+        <canvas id="canvas_sim_23651" width="700" height="200" style="background: #ffffff; border: 1px solid #ccc; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); max-width: 100%;"></canvas>
     </div>
 </div>
 
 <script>
     (function() {
         function initSimulation() {
-            const canvas = document.getElementById('canvas_sim_16515');
+            const canvas = document.getElementById('canvas_sim_23651');
             if (!canvas) {
                 setTimeout(initSimulation, 50); 
                 return;
             }
             
             const ctx = canvas.getContext('2d');
-            const btn_power = document.getElementById('power_16515');
-            const btn_reset = document.getElementById('reset_16515');
+            const btn_power = document.getElementById('power_23651');
+            const btn_reset = document.getElementById('reset_23651');
             
             // Inputs
-            const slider_target = document.getElementById('target_pos_16515');
-            const slider_kp = document.getElementById('kp_val_16515');
-            const lbl_kp = document.getElementById('lbl_kp_16515');
-            const chk_sound = document.getElementById('sound_chk_16515');
+            const slider_target = document.getElementById('target_pos_23651');
+            const slider_kp = document.getElementById('kp_val_23651');
+            const lbl_kp = document.getElementById('lbl_kp_23651');
+            const chk_sound = document.getElementById('sound_chk_23651');
             
             // Telemetría
-            const tele_dist = document.getElementById('tele_dist_16515');
-            const tele_err = document.getElementById('tele_err_16515');
-            const tele_pot = document.getElementById('tele_pot_16515');
+            const tele_dist = document.getElementById('tele_dist_23651');
+            const tele_err = document.getElementById('tele_err_23651');
+            const tele_pot = document.getElementById('tele_pot_23651');
             
             // Constantes Físicas y de Escala
             const PX_PER_CM = 6;
@@ -1318,7 +1319,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Cazadores de Mitos: ¿Existe realmente la Velocidad Constante? 📊</p>
+        <p class="prev-next-title">Telemetría MRU</p>
       </div>
     </a>
 </div>

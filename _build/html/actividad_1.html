@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Biomímesis: El Sexto Sentido del Murciélago 🦇 &#8212; El Libro de LEGO</title>
+    <title>Ecolocalización &#8212; El Libro de LEGO</title>
   
   
   
@@ -65,7 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'actividad_1';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Física del Caos: El Desafío del Transporte Seguro 💧" href="actividad_2.html" />
+    <link rel="next" title="Control de Inercia" href="actividad_2.html" />
     <link rel="prev" title="Conceptos Básicos en NXC" href="conceptos_programacion.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -183,10 +183,10 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Actividades</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Biomímesis: El Sexto Sentido del Murciélago 🦇</a></li>
-<li class="toctree-l1"><a class="reference internal" href="actividad_2.html">Física del Caos: El Desafío del Transporte Seguro 💧</a></li>
-<li class="toctree-l1"><a class="reference internal" href="actividad_3.html">Cazadores de Mitos: ¿Existe realmente la Velocidad Constante? 📊</a></li>
-<li class="toctree-l1"><a class="reference internal" href="actividad_4.html">Ingeniería del Siglo XXI: Sistema de Frenado Autónomo 🚗</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Ecolocalización</a></li>
+<li class="toctree-l1"><a class="reference internal" href="actividad_2.html">Control de Inercia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="actividad_3.html">Telemetría MRU</a></li>
+<li class="toctree-l1"><a class="reference internal" href="actividad_4.html">Frenado Autónomo</a></li>
 </ul>
 
     </div>
@@ -372,7 +372,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Biomímesis: El Sexto Sentido del Murciélago 🦇</h1>
+    <h1>Ecolocalización</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -406,8 +406,9 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="biomimesis-el-sexto-sentido-del-murcielago">
-<h1>Biomímesis: El Sexto Sentido del Murciélago 🦇<a class="headerlink" href="#biomimesis-el-sexto-sentido-del-murcielago" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="ecolocalizacion">
+<h1>Ecolocalización<a class="headerlink" href="#ecolocalizacion" title="Permalink to this heading">#</a></h1>
+<p><strong>El Sexto Sentido del Murciélago 🦇</strong></p>
 <p>¿Alguna vez te has preguntado cómo los murciélagos pueden volar en la oscuridad total sin chocar con las ramas de los árboles? En este laboratorio, transformaremos nuestro Ladrillo NXT en una criatura capaz de “ver” usando el sonido.</p>
 <div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
@@ -742,24 +743,24 @@ document.write(`
     
     <div style="display: flex; gap: 20px; margin-bottom: 20px; background: #e9ecef; padding: 15px; border-radius: 8px; flex-wrap: wrap; align-items: center; justify-content: space-between;">
         <div style="display: flex; gap: 15px; align-items: center;">
-            <button id="play_11595" style="background-color: #198754; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 14px;">▶ Reproducir</button>
-            <button id="reset_11595" style="background-color: #6c757d; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 14px;">🔄 Reiniciar</button>
+            <button id="play_88214" style="background-color: #198754; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 14px;">▶ Reproducir</button>
+            <button id="reset_88214" style="background-color: #6c757d; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 14px;">🔄 Reiniciar</button>
         </div>
         
         <div style="display: flex; gap: 20px; align-items: center;">
             <div style="display: flex; flex-direction: column; align-items: center; background: #fff; padding: 8px 15px; border-radius: 5px; border: 1px solid #ccc; width: 140px;">
                 <label style="font-weight: 600; font-size: 0.8em; margin-bottom: 2px; color: #0d6efd;">Distancia (Sensor)</label>
-                <span id="dist_val_11595" style="font-weight: bold; font-family: monospace; font-size: 1.1em; color: #212529;">40.0 cm</span>
+                <span id="dist_val_88214" style="font-weight: bold; font-family: monospace; font-size: 1.1em; color: #212529;">40.0 cm</span>
             </div>
             <div style="display: flex; flex-direction: column; align-items: center; background: #fff; padding: 8px 15px; border-radius: 5px; border: 1px solid #ccc; width: 140px;">
                 <label style="font-weight: 600; font-size: 0.8em; margin-bottom: 2px; color: #dc3545;">Tiempo (Wait)</label>
-                <span id="wait_val_11595" style="font-weight: bold; font-family: monospace; font-size: 1.1em; color: #212529;">400 ms</span>
+                <span id="wait_val_88214" style="font-weight: bold; font-family: monospace; font-size: 1.1em; color: #212529;">400 ms</span>
             </div>
         </div>
     </div>
     
     <div style="display: flex; justify-content: center; margin-bottom: 10px;">
-        <canvas id="canvas_sim_11595" width="600" height="200" style="background: #ffffff; border: 1px solid #ccc; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); max-width: 100%;"></canvas>
+        <canvas id="canvas_sim_88214" width="600" height="200" style="background: #ffffff; border: 1px solid #ccc; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); max-width: 100%;"></canvas>
     </div>
     
     <div style="text-align: center; font-size: 0.85em; color: #6c757d; margin-top: 5px;">
@@ -770,17 +771,17 @@ document.write(`
 <script>
     (function() {
         function initSimulation() {
-            const canvas = document.getElementById('canvas_sim_11595');
+            const canvas = document.getElementById('canvas_sim_88214');
             if (!canvas) {
                 setTimeout(initSimulation, 50); 
                 return;
             }
             
             const ctx = canvas.getContext('2d');
-            const btn_play = document.getElementById('play_11595');
-            const btn_reset = document.getElementById('reset_11595');
-            const lbl_dist = document.getElementById('dist_val_11595');
-            const lbl_wait = document.getElementById('wait_val_11595');
+            const btn_play = document.getElementById('play_88214');
+            const btn_reset = document.getElementById('reset_88214');
+            const lbl_dist = document.getElementById('dist_val_88214');
+            const lbl_wait = document.getElementById('wait_val_88214');
             
             // Audio Context para generar los Beeps como el NXT
             let audioCtx = null;
@@ -1176,7 +1177,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Física del Caos: El Desafío del Transporte Seguro 💧</p>
+        <p class="prev-next-title">Control de Inercia</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

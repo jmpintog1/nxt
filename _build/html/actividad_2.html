@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Física del Caos: El Desafío del Transporte Seguro 💧 &#8212; El Libro de LEGO</title>
+    <title>Control de Inercia &#8212; El Libro de LEGO</title>
   
   
   
@@ -65,8 +65,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'actividad_2';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Cazadores de Mitos: ¿Existe realmente la Velocidad Constante? 📊" href="actividad_3.html" />
-    <link rel="prev" title="Biomímesis: El Sexto Sentido del Murciélago 🦇" href="actividad_1.html" />
+    <link rel="next" title="Telemetría MRU" href="actividad_3.html" />
+    <link rel="prev" title="Ecolocalización" href="actividad_1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -183,10 +183,10 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Actividades</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="actividad_1.html">Biomímesis: El Sexto Sentido del Murciélago 🦇</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Física del Caos: El Desafío del Transporte Seguro 💧</a></li>
-<li class="toctree-l1"><a class="reference internal" href="actividad_3.html">Cazadores de Mitos: ¿Existe realmente la Velocidad Constante? 📊</a></li>
-<li class="toctree-l1"><a class="reference internal" href="actividad_4.html">Ingeniería del Siglo XXI: Sistema de Frenado Autónomo 🚗</a></li>
+<li class="toctree-l1"><a class="reference internal" href="actividad_1.html">Ecolocalización</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Control de Inercia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="actividad_3.html">Telemetría MRU</a></li>
+<li class="toctree-l1"><a class="reference internal" href="actividad_4.html">Frenado Autónomo</a></li>
 </ul>
 
     </div>
@@ -372,7 +372,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Física del Caos: El Desafío del Transporte Seguro 💧</h1>
+    <h1>Control de Inercia</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -406,8 +406,9 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="fisica-del-caos-el-desafio-del-transporte-seguro">
-<h1>Física del Caos: El Desafío del Transporte Seguro 💧<a class="headerlink" href="#fisica-del-caos-el-desafio-del-transporte-seguro" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="control-de-inercia">
+<h1>Control de Inercia<a class="headerlink" href="#control-de-inercia" title="Permalink to this heading">#</a></h1>
+<p><strong>El Desafío del Transporte Seguro 💧</strong></p>
 <p>¿Has notado qué pasa en la micro o en el metro cuando el chofer acelera de golpe? Te vas hacia atrás. ¿Y cuando frena bruscamente? Te vas hacia adelante. A esto se le llama <strong>Inercia</strong>.</p>
 <p>En este laboratorio, tu robot se convertirá en un vehículo de transporte de carga delicada. Descubrirás por qué encender un motor al 100% de inmediato es una pésima idea en el mundo real.</p>
 <div class="cell tag_hide-input docutils container">
@@ -815,15 +816,15 @@ document.write(`
     
     <div style="display: flex; gap: 20px; margin-bottom: 20px; background: #e9ecef; padding: 15px; border-radius: 8px; flex-wrap: wrap; align-items: center; justify-content: space-between;">
         <div style="display: flex; gap: 10px; align-items: center;">
-            <button id="play_33933" style="background-color: #0d6efd; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 14px;">▶ Ejecutar Codigo NXC</button>
-            <button id="reset_33933" style="background-color: #6c757d; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 14px;">🔄 Limpiar y Reiniciar</button>
+            <button id="play_33976" style="background-color: #0d6efd; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 14px;">▶ Ejecutar Codigo NXC</button>
+            <button id="reset_33976" style="background-color: #6c757d; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 14px;">🔄 Limpiar y Reiniciar</button>
         </div>
         
         <div style="display: flex; flex-direction: column; align-items: center; background: #fff; padding: 10px 20px; border-radius: 5px; border: 1px solid #ccc;">
             <label style="font-weight: 600; font-size: 0.85em; color: #6f42c1; margin-bottom: 5px;">Tiempo de incremento: Wait( ? )</label>
             <div style="display: flex; align-items: center; gap: 10px;">
-                <input type="range" id="wait_val_33933" min="20" max="300" step="20" value="100" style="width: 150px; cursor: pointer;">
-                <span id="lbl_wait_33933" style="font-weight: bold; font-family: monospace; font-size: 1.1em; width: 65px; color: #212529;">100 ms</span>
+                <input type="range" id="wait_val_33976" min="20" max="300" step="20" value="100" style="width: 150px; cursor: pointer;">
+                <span id="lbl_wait_33976" style="font-weight: bold; font-family: monospace; font-size: 1.1em; width: 65px; color: #212529;">100 ms</span>
             </div>
         </div>
     </div>
@@ -831,41 +832,41 @@ document.write(`
     <div style="display: flex; gap: 15px; justify-content: center; margin-bottom: 15px; flex-wrap: wrap;">
         <div style="background: #fff; padding: 8px 15px; border-radius: 5px; border: 1px solid #ccc; width: 140px; text-align: center;">
             <label style="font-weight: 600; font-size: 0.8em; margin-bottom: 2px; color: #fd7e14; display: block;">Potencia Motor</label>
-            <span id="tele_pot_33933" style="font-weight: bold; font-family: monospace; font-size: 1.1em; color: #212529;">0 / 70</span>
+            <span id="tele_pot_33976" style="font-weight: bold; font-family: monospace; font-size: 1.1em; color: #212529;">0 / 70</span>
         </div>
         <div style="background: #fff; padding: 8px 15px; border-radius: 5px; border: 1px solid #ccc; width: 150px; text-align: center;">
             <label style="font-weight: 600; font-size: 0.8em; margin-bottom: 2px; color: #dc3545; display: block;">Aceleracion (Inercia)</label>
-            <span id="tele_acc_33933" style="font-weight: bold; font-family: monospace; font-size: 1.1em; color: #212529;">0.00 m/s²</span>
+            <span id="tele_acc_33976" style="font-weight: bold; font-family: monospace; font-size: 1.1em; color: #212529;">0.00 m/s²</span>
         </div>
         <div style="background: #fff; padding: 8px 15px; border-radius: 5px; border: 1px solid #ccc; width: 180px; text-align: center;">
             <label style="font-weight: 600; font-size: 0.8em; margin-bottom: 2px; color: #0d6efd; display: block;">Estado de la Carga</label>
-            <span id="tele_status_33933" style="font-weight: bold; font-family: monospace; font-size: 1.1em; color: #212529;">Segura</span>
+            <span id="tele_status_33976" style="font-weight: bold; font-family: monospace; font-size: 1.1em; color: #212529;">Segura</span>
         </div>
     </div>
     
     <div style="display: flex; justify-content: center; margin-bottom: 10px;">
-        <canvas id="canvas_sim_33933" width="800" height="300" style="background: #ffffff; border: 1px solid #ccc; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); max-width: 100%;"></canvas>
+        <canvas id="canvas_sim_33976" width="800" height="300" style="background: #ffffff; border: 1px solid #ccc; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); max-width: 100%;"></canvas>
     </div>
 </div>
 
 <script>
     (function() {
         function initSimulation() {
-            const canvas = document.getElementById('canvas_sim_33933');
+            const canvas = document.getElementById('canvas_sim_33976');
             if (!canvas) {
                 setTimeout(initSimulation, 50); 
                 return;
             }
             
             const ctx = canvas.getContext('2d');
-            const btn_play = document.getElementById('play_33933');
-            const btn_reset = document.getElementById('reset_33933');
-            const slider_wait = document.getElementById('wait_val_33933');
-            const lbl_wait = document.getElementById('lbl_wait_33933');
+            const btn_play = document.getElementById('play_33976');
+            const btn_reset = document.getElementById('reset_33976');
+            const slider_wait = document.getElementById('wait_val_33976');
+            const lbl_wait = document.getElementById('lbl_wait_33976');
             
-            const tele_pot = document.getElementById('tele_pot_33933');
-            const tele_acc = document.getElementById('tele_acc_33933');
-            const tele_status = document.getElementById('tele_status_33933');
+            const tele_pot = document.getElementById('tele_pot_33976');
+            const tele_acc = document.getElementById('tele_acc_33976');
+            const tele_status = document.getElementById('tele_status_33976');
             
             // Constantes Visuales
             const Y_FLOOR = 240;
@@ -1306,7 +1307,7 @@ Para resolver esto, usaremos una nueva herramienta de programación llamada <str
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Biomímesis: El Sexto Sentido del Murciélago 🦇</p>
+        <p class="prev-next-title">Ecolocalización</p>
       </div>
     </a>
     <a class="right-next"
@@ -1314,7 +1315,7 @@ Para resolver esto, usaremos una nueva herramienta de programación llamada <str
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Cazadores de Mitos: ¿Existe realmente la Velocidad Constante? 📊</p>
+        <p class="prev-next-title">Telemetría MRU</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

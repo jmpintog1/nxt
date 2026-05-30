@@ -1,5 +1,5 @@
 
-# Robótica Educativa con LEGO NXT: Del Código a la Física Aplicada 🚀
+# Robóticaa Educativa con LEGO NXT: Del Código a la Física Aplicada 🚀
 
 Bienvenido a un enfoque completamente nuevo para la enseñanza de las ciencias y la tecnología. 
 
